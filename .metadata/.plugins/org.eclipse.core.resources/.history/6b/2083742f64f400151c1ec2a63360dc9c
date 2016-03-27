@@ -1,0 +1,29 @@
+package test_8;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Beeper extends JFrame{
+	
+	private JButton button;
+	private JLabel label;
+	int counter = 0;
+	int x = 0;
+	String str;
+	
+	
+	public Beeper() {
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		Beeper beeper = new Beeper();
+		beeper.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		beeper.setSize(300, 300);
+		beeper.setVisible(true);
+		beeper.setTitle("The title");
+	}
+}

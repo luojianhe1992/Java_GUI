@@ -1,0 +1,17 @@
+package test_8;
+
+import javax.swing.JFrame;
+
+public class Beeper extends JFrame{
+	
+	
+	
+	public Beeper() {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
