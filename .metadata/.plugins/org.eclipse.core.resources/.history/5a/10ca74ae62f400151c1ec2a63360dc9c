@@ -1,0 +1,15 @@
+package test_7;
+
+import javax.swing.JFrame;
+
+public class MenuTutorial extends JFrame{
+	
+	public MenuTutorial() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

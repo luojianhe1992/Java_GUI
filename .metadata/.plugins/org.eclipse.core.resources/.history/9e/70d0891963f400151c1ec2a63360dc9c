@@ -1,0 +1,35 @@
+package test_7;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class MenuTutorial extends JFrame{
+	
+	private JMenuBar menuBar;	
+	private JMenu menu;
+	private JMenuItem jMenuItem;
+	
+	public MenuTutorial() {
+		setLayout(new FlowLayout());
+		
+		
+		menuBar = new JMenuBar();
+		setMenuBar(menuBar);
+				
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		MenuTutorial menuTutorial = new MenuTutorial();
+		menuTutorial.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		menuTutorial.setSize(300, 300);
+		menuTutorial.setVisible(true);
+		menuTutorial.setTitle("The title");
+	}
+}

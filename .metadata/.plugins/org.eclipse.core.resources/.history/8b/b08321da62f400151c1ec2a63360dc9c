@@ -1,0 +1,23 @@
+package test_7;
+
+import javax.swing.JFrame;
+
+public class MenuTutorial extends JFrame{
+	
+	
+	
+	
+	
+	public MenuTutorial() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		MenuTutorial menuTutorial = new MenuTutorial();
+		menuTutorial.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		menuTutorial.setSize(300, 300);
+		menuTutorial.setVisible(true);
+		menuTutorial.setTitle("The title");
+	}
+}
