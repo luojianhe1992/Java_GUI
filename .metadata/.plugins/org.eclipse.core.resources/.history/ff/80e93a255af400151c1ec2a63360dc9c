@@ -1,0 +1,9 @@
+package test_1;
+
+import javax.swing.JFrame;
+
+public class FirstGUI extends JFrame{
+	FirstGUI firstGUI = new FirstGUI();
+	
+	
+}

@@ -1,0 +1,14 @@
+package test_2;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class FirstGUI extends JFrame{
+	
+	private JLabel
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

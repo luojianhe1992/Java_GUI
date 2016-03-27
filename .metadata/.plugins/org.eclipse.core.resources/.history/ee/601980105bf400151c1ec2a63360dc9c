@@ -1,0 +1,29 @@
+package test_2;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class FirstGUI extends JFrame{
+	
+	private JLabel label;
+	private JButton button;
+	private JTextField textField;
+	
+	public FirstGUI() {
+		setLayout(new FlowLayout());
+		
+		label = new JLabel(text)
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

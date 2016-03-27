@@ -1,0 +1,20 @@
+package test_3;
+
+import javax.swing.JFrame;
+
+public class ImageTutorial extends JFrame{
+	
+	private 
+	
+	public ImageTutorial() {
+		
+	}
+	
+	public static void main(String[] args) {
+		ImageTutorial imageTutorial = new ImageTutorial();
+		imageTutorial.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		imageTutorial.setSize(200, 200);
+		imageTutorial.setVisible(true);
+		imageTutorial.setTitle("The title");
+	}
+}

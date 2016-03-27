@@ -1,0 +1,27 @@
+package test_3;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class ImageTutorial extends JFrame{
+	
+	private JLabel label1;
+	private ImageIcon image1;
+	private JLabel label2;
+	private ImageIcon image2;
+	
+	public ImageTutorial() {
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		ImageTutorial imageTutorial = new ImageTutorial();
+		imageTutorial.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		imageTutorial.setSize(200, 200);
+		imageTutorial.setVisible(true);
+		imageTutorial.setTitle("The title");
+	}
+}

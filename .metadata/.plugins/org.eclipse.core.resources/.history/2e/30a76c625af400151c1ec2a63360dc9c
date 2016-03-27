@@ -1,0 +1,14 @@
+package test_1;
+
+import javax.swing.JFrame;
+
+public class FirstGUI extends JFrame{
+	public static void main(String[] args) {
+		FirstGUI firstGUI = new FirstGUI("The title");
+		firstGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		firstGUI.setSize(200, 200);
+		
+	}
+	
+	
+}

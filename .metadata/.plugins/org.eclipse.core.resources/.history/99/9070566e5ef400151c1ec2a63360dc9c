@@ -1,0 +1,45 @@
+package test_4;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class EventDemo extends JFrame{
+	
+	private JLabel label;
+	private JButton button;
+	
+	public EventDemo() {
+		button = new JButton("Click for text");
+		add(button);
+		
+		label = new JLabel();
+		add(label);
+		
+		Handler handler = new Handler();
+		
+		// add ActionListener to the button
+		button.addActionListener(handler);
+		
+	}
+	
+	public static void main(String[] args) {
+		EventDemo eventDemo = new EventDemo();
+		eventDemo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		eventDemo.setSize(200, 200);
+		eventDemo.setVisible(true);
+		eventDemo.setTitle("The title");
+	}
+	
+	// create a subclass under the JFrame class, implement the ActionListener interface
+	private class Handler implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent event) {
+			label.setText("You click the button");
+		}
+	}
+}

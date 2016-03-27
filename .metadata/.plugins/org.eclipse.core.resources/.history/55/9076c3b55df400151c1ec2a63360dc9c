@@ -1,0 +1,20 @@
+package test_4;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class EventDemo extends JFrame{
+	
+	private JLabel label;
+	private JButton button;
+	
+	public EventDemo() {
+		
+	}
+	
+	public static void main(String[] args) {
+		EventDemo eventDemo = new EventDemo();
+		
+	}
+}

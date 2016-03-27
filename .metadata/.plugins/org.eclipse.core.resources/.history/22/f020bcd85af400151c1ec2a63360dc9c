@@ -1,0 +1,13 @@
+package test_2;
+
+import javax.swing.JFrame;
+
+public class FirstGUI extends JFrame{
+	
+	private 
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

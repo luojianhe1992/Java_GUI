@@ -1,0 +1,15 @@
+package test_4;
+
+import javax.swing.JFrame;
+
+public class EventDemo extends JFrame{
+	
+	public EventDemo() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

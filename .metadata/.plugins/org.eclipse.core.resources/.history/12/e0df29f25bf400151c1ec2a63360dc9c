@@ -1,0 +1,15 @@
+package test_3;
+
+import javax.swing.JFrame;
+
+public class ImageTutorial extends JFrame{
+	
+	public ImageTutorial() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		ImageTutorial imageTutorial = new ImageTutorial();
+		imageTutorial.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}

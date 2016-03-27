@@ -1,0 +1,9 @@
+package test_3;
+
+import javax.swing.JFrame;
+
+public class ImageTutorial extends JFrame{
+	public static void main(String[] args) {
+		
+	}
+}
