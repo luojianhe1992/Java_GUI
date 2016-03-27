@@ -1,0 +1,74 @@
+package test_5;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+public class EventDemo extends JFrame{
+	private JLabel label1;
+	private JButton button1;
+	
+	private JLabel label2;
+	private JButton button2;
+	
+	private boolean checkButton1
+	
+	
+	public EventDemo() {
+		
+		setLayout(new FlowLayout());
+		
+		button1 = new JButton("Click for text");
+		add(button1);
+		
+		label1 = new JLabel();
+		add(label1);
+		
+		Handler1 handler = new Handler1();
+		// add ActionListener to the button
+		button1.addActionListener(handler);
+		
+		
+		button2 = new JButton("Click for more text");
+		add(button2);
+		
+		label2 = new JLabel("");
+		add(label2);
+		
+		Handler2 handler2 = new Handler2();
+		button2.addActionListener(handler2);
+		
+	}
+	
+	
+	// create a subclass under the JFrame class, implement the ActionListener interface
+	private class Handler1 implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent event) {
+			label1.setText("You click the button.");
+		}
+	}
+	
+	private class Handler2 implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			label2.setText("This is label2 text.");
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		EventDemo eventDemo = new EventDemo();
+		eventDemo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		eventDemo.setSize(200, 200);
+		eventDemo.setVisible(true);
+		eventDemo.setTitle("The title");
+	}
+}
