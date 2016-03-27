@@ -1,0 +1,11 @@
+package test_10;
+
+public class MouseMoverDemo {
+	public MouseMoverDemo() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
