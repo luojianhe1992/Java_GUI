@@ -1,0 +1,19 @@
+package test_6;
+
+import javax.swing.JFrame;
+
+public class RandomGame extends JFrame{
+	
+	public RandomGame() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		RandomGame randomGame = new RandomGame();
+		randomGame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		randomGame.setSize(300, 300);
+		randomGame.setVisible(true);
+		randomGame.setTitle(title);
+	}
+}
