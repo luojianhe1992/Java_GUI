@@ -1,0 +1,25 @@
+package test_9;
+
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class LayoutDemo extends JFrame{
+	
+	private JButton button1, button2, button3;
+	private JLabel label1, label2, label3;
+	
+	public LayoutDemo() {
+		
+		setLayout(new GridLayout(2, 3));
+		
+		button1 = new JButton()
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

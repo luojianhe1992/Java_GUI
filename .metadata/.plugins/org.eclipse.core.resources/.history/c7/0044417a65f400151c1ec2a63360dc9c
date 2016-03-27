@@ -1,0 +1,16 @@
+package test_9;
+
+import javax.swing.JFrame;
+
+public class LayoutDemo extends JFrame{
+	
+	priavet 
+	
+	public LayoutDemo() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

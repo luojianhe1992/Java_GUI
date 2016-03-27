@@ -1,0 +1,14 @@
+package test_9;
+
+import javax.swing.JFrame;
+
+public class LayoutDemo extends JFrame{
+	
+	public LayoutDemo() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
