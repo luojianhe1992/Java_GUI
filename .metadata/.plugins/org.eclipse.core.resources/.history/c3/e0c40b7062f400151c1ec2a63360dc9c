@@ -58,8 +58,8 @@ public class RandomGame extends JFrame{
 				}
 				randomLabel.setText("The random number is: " + randomNumber + ".");
 				
-			} catch (Exception exception) {
-				exception.printStackTrace();
+			} catch (Exception e) {
+				e.printStackTrace();
 				randomLabel.setText("Please enter an integer number only.");
 			}
 		}
