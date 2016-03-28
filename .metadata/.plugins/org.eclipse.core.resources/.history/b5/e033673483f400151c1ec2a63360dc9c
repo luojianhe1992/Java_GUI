@@ -1,0 +1,34 @@
+package test_12;
+
+import java.awt.FlowLayout;
+import java.awt.event.MouseListener;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class RandomColor extends JFrame{
+
+	private JPanel panel;
+	
+	public RandomColor() {
+		setLayout(new FlowLayout());
+		
+		panel = new JPanel();
+		panel.setBackground(randomColor());
+		add(panel);
+		
+		
+	}
+	
+	private class Handler implements MouseListener{
+		
+	}
+	
+	public static void main(String[] args) {
+		RandomColor randomColor = new RandomColor();
+		randomColor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		randomColor.setSize(300, 300);
+		randomColor.setVisible(true);
+		randomColor.setTitle("The title");
+	}
+}

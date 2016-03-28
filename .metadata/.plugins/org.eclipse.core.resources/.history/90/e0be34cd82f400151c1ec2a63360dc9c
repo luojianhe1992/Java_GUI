@@ -1,0 +1,14 @@
+package test_12;
+
+import javax.swing.JFrame;
+
+public class RandomColor extends JFrame{
+
+	public RandomColor() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
