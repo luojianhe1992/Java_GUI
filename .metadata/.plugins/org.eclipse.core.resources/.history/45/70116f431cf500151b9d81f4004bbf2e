@@ -1,0 +1,58 @@
+package test_22;
+
+import javax.swing.Action;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.*;
+
+public class InputOutputDemo extends JFrame{
+	
+	private JLabel label;
+	private JTextField textField;
+	private JButton button;
+	
+	public InputOutputDemo() {
+		setLayout(new FlowLayout());
+		
+		label = new JLabel("Enter text to write to file.");
+		add(label);
+		
+		textField = new JTextField();
+		add(textField);
+		
+		button = new JButton("Write to file");
+		add(button);
+		
+		Handler handler = new Handler();
+		button.addActionListener(handler);
+		
+	}
+	
+	private class Handler implements ActionListener{
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			try {
+				
+				String words = textField.getText();
+				FileWriter fileWriter = new FileWriter(fileName)
+				
+			} catch (IOException ioException) {
+				ioException.printStackTrace();
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		InputOutputDemo inputOutputDemo = new InputOutputDemo();
+		inputOutputDemo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		inputOutputDemo.setSize(300, 300);
+		inputOutputDemo.setVisible(true);
+		inputOutputDemo.setTitle("The title");
+	}
+}
