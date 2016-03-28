@@ -1,0 +1,7 @@
+package test_17;
+
+import javax.swing.JFrame;
+
+public class HelpWindow extends {
+
+}

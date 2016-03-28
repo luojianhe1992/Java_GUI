@@ -1,0 +1,17 @@
+package test_17;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class HelpWindow extends JDialog{
+	
+	private JLabel label;
+	
+	public HelpWindow(JFrame jFrame) {
+		super(jFrame);
+		setLayout(new FlowLayout());
+	}
+}

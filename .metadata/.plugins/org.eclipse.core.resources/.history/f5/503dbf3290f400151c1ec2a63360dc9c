@@ -1,0 +1,16 @@
+package test_17;
+
+import javax.swing.JFrame;
+
+public class MainWindow extends JFrame{
+
+	public MainWindow() {
+		
+	}
+	
+	public static void main(String[] args) {
+		MainWindow mainWindow = new MainWindow();
+		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+}

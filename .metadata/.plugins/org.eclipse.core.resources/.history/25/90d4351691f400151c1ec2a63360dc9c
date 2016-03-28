@@ -1,0 +1,57 @@
+package test_17;
+
+import java.awt.Event;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class MainWindow extends JFrame{
+
+	private JMenuBar jMenuBar;
+	private JMenu jMenu;
+	private JMenuItem jMenuItem;
+	
+	public MainWindow() {
+		setLayout(new FlowLayout());
+		
+		jMenuBar = new JMenuBar();
+		add(jMenuBar);
+		
+		jMenu = new JMenu("Help");
+		add(jMenu);
+		
+		jMenuItem = new JMenuItem("About");
+		jMenu.add(jMenuItem);
+		
+		setJMenuBar(jMenuBar);
+		
+		Handler handler = new Handler();
+		jMenuItem.addActionListener(handler);
+	}
+	
+	private class Handler implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			HelpWindow helpWindow = HelpWindow(MainWindow.this);
+			
+			helpWindow.setDefaultCloseOperation(operation);
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		MainWindow mainWindow = new MainWindow();
+		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		mainWindow.setSize(300, 300);
+		mainWindow.setVisible(true);
+		mainWindow.setTitle("The title");
+	}
+	
+}
