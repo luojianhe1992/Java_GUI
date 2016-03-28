@@ -1,0 +1,56 @@
+package test_20;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Time;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.Timer;
+
+public class TimerTutorial extends JFrame{
+	
+	private JLabel promptLabel, timerLabel;
+	private int counter;
+	private JTextField textField;
+	private JButton button;
+	private Timer time;
+	
+	public TimerTutorial() {
+		
+		setLayout(new GridLayout(2, 2, 5, 5));
+		
+		promptLabel = new JLabel("Enter seconds: ", SwingConstants.CENTER);
+		add(promptLabel);
+		
+		textField = new JTextField(5);
+		add(textField);
+		
+		button = new JButton("Start timing");
+		add(button);
+		
+		timerLabel = new JLabel("Waiting...", SwingConstants.CENTER);
+		add(timerLabel);
+		
+		Handler handler = new Handler();
+		button.addActionListener(handler);
+			
+	}
+	
+	private class Handler implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			int count = 
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

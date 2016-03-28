@@ -1,0 +1,30 @@
+package test_19;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+
+public class JTextareaDemo extends JFrame{
+	
+	private JTextArea textArea;
+	private JButton button;
+	private JLabel label;
+	
+	
+	public JTextareaDemo() {
+		setLayout(new FlowLayout());
+		
+		textArea = new JTextArea(5, 30);
+		add(textArea);
+		
+		button = new JButton(text)
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

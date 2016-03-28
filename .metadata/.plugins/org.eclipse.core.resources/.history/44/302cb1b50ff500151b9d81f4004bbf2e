@@ -1,0 +1,19 @@
+package test_19;
+
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+
+public class JTextareaDemo extends JFrame{
+	
+	private JTextArea jTextArea;
+	
+	
+	
+	public JTextareaDemo() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

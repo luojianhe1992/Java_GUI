@@ -1,0 +1,35 @@
+package test_20;
+
+import java.awt.GridLayout;
+import java.sql.Time;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.Timer;
+
+public class TimerTutorial extends JFrame{
+	
+	private JLabel promptLabel, timerLabel;
+	private int counter;
+	private JTextField textField;
+	private JButton button;
+	private Timer time;
+	
+	public TimerTutorial() {
+		
+		setLayout(new GridLayout(2, 2, 5, 5));
+		
+		promptLabel = new JLabel("Enter seconds: ", SwingConstants.CENTER);
+		add(promptLabel);
+		
+		textField = new JTextField();
+		add(textField)
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

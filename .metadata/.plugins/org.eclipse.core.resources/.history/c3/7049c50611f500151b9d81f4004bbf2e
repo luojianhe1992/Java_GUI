@@ -1,0 +1,20 @@
+package test_20;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class TimerTutorial extends JFrame{
+	
+	private JLabel promptLabel, timerLabel;
+	private int counter;
+	private JTextField textField
+	
+	public TimerTutorial() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

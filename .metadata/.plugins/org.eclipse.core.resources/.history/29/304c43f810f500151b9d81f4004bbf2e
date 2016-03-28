@@ -1,0 +1,18 @@
+package test_20;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class TimerTutorial extends JFrame{
+	
+	private JLabel promptLabel, timerLabel;
+	
+	
+	public TimerTutorial() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

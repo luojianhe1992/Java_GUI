@@ -1,7 +1,0 @@
-package test_14;
-
-import javax.swing.JFrame;
-
-public class JTableDemo extends JFrame{
-
-}

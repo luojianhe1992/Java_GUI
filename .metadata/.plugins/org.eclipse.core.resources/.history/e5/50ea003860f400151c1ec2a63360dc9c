@@ -1,9 +1,0 @@
-package test_6;
-
-import javax.swing.JFrame;
-
-public class RandomGame extends JFrame{
-	public static void main(String[] args) {
-		
-	}
-}

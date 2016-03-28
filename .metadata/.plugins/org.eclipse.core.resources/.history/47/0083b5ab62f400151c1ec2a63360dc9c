@@ -1,9 +1,0 @@
-package test_7;
-
-import javax.swing.JFrame;
-
-public class MenuTutorial extends JFrame{
-	public static void main(String[] args) {
-		
-	}
-}

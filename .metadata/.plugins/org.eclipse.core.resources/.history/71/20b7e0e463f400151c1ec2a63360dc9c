@@ -1,7 +1,0 @@
-package test_8;
-
-public class Beeper {
-	public static void main(String[] args) {
-		
-	}
-}

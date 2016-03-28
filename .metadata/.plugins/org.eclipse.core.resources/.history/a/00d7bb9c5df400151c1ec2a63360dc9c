@@ -1,9 +1,0 @@
-package test_4;
-
-import javax.swing.JFrame;
-
-public class EventDemo extends JFrame{
-	public static void main(String[] args) {
-		
-	}
-}

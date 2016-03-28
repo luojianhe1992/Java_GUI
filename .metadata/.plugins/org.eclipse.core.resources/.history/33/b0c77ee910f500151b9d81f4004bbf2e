@@ -1,0 +1,14 @@
+package test_20;
+
+import javax.swing.JFrame;
+
+public class TimerTutorial extends JFrame{
+	
+	public TimerTutorial() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

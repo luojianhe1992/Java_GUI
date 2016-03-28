@@ -1,0 +1,22 @@
+package test_19;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+
+public class JTextareaDemo extends JFrame{
+	
+	private JTextArea textArea;
+	private JButton button;
+	private JLabel label;
+	
+	
+	public JTextareaDemo() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

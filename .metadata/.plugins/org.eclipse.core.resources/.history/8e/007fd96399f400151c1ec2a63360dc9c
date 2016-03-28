@@ -1,0 +1,14 @@
+package test_19;
+
+import javax.swing.JFrame;
+
+public class JTextareaDemo extends JFrame{
+	
+	public JTextareaDemo() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
