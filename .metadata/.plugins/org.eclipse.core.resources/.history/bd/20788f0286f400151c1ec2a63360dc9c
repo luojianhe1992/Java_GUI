@@ -1,0 +1,28 @@
+package test_14;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JTable;
+
+public class JTableDemo extends JFrame{
+	
+	private JTable table;
+	
+	public JTableDemo() {
+		setLayout(new FlowLayout());
+		
+		String [] columnNames = {"Name", "Eye color", "Gender"};
+		
+		Object [][] data = {
+							{"Bill", "Hazel", "Male"},
+							{"Mary", "Black", "Female"}
+				
+							};
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
