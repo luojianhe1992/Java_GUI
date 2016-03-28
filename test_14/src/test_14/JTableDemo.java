@@ -24,10 +24,21 @@ public class JTableDemo extends JFrame{
 							{"Janice", "Yellow", "Female"}
 							};
 		
+		for (int i = 0; i < data.length; i++) {
+			for (int j = 0; j < data[0].length; j++) {
+				System.out.println(data[i][j]);
+				System.out.println("*******");
+			}
+			System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+		}
+		
+		// create a new JTable  using data and columnNames
 		table = new JTable(data, columnNames);
 		table.setPreferredScrollableViewportSize(new Dimension(200, 40));
 		table.setFillsViewportHeight(true);
 		
+		
+		// put the JTable into JScrollPane
 		JScrollPane jScrollPane = new JScrollPane(table);
 		add(jScrollPane);
 	}
