@@ -1,0 +1,55 @@
+package test_16;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
+public class ColorSlider extends JFrame{
+
+	JSlider redSlider, greenSlider, blueSlider;
+	JLabel redLabel, greenLabel, blueLabel;
+	JPanel colorPanel, sliderPanel, labelPanel;
+	
+	public ColorSlider() {
+		
+		setLayout(new FlowLayout());
+		
+		redSlider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+		greenSlider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+		blueSlider = new JSlider(JSlider.HORIZONTAL, 0, 255, 0);
+
+		redLabel = new JLabel("Red = 0");
+		greenLabel = new JLabel("Green = 0");
+		blueLabel = new JLabel("Blue = 0");
+
+		Handler handler = new Handler();
+		redSlider.addChangeListener(handler);
+		greenSlider.addChangeListener(handler);
+		blueSlider.addChangeListener(handler);
+		
+		
+	}
+	
+	
+	private class Handler implements ChangeListener{
+
+		@Override
+		public void stateChanged(ChangeEvent e) {
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		ColorSlider colorSlider = new ColorSlider();
+		colorSlider.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		colorSlider.setSize(300, 300);
+		colorSlider.setVisible(true);
+		colorSlider.setTitle("The title");
+	}
+}

@@ -1,0 +1,18 @@
+package test_16;
+
+import javax.swing.JFrame;
+
+public class ColorSlider extends JFrame{
+	
+	public ColorSlider() {
+		
+	}
+	
+	public static void main(String[] args) {
+		ColorSlider colorSlider = new ColorSlider();
+		colorSlider.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		colorSlider.setSize(300, 300);
+		colorSlider.setVisible(true);
+		colorSlider.setTitle("The title");
+	}
+}
