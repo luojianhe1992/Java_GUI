@@ -1,0 +1,14 @@
+package test_13;
+
+import javax.swing.JFrame;
+
+public class CheckboxDemo extends JFrame{
+	
+	public CheckboxDemo() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

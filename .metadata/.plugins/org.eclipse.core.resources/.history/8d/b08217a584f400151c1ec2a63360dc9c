@@ -1,0 +1,29 @@
+package test_13;
+
+import java.awt.GridLayout;
+
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class CheckboxDemo extends JFrame{
+	
+	JCheckBox show1, show2;
+	JLabel label1, label2;
+	
+	public CheckboxDemo() {
+		setLayout(new GridLayout(2, 2));
+
+		label1 = new JLabel("");
+		add(label1);
+		
+		label2 = new JLabel("");
+		add(label2);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
