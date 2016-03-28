@@ -1,0 +1,43 @@
+package test_11;
+
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Calculator extends JFrame{
+	
+	private JButton add, subtract, multiply, divide;
+	private JTextField num1, num2;
+	JLabel label1, enter1, enter2;
+	
+	public Calculator() {
+		setLayout(new GridBagLayout());
+		GridBagConstraints bagConstraints = new GridBagConstraints();
+		
+		enter1 = new JLabel("First: ");
+		bagConstraints.fill = GridBagConstraints.HORIZONTAL;
+		bagConstraints.gridx = 0;
+		bagConstraints.gridy = 0;
+		add(enter1, bagConstraints);
+		
+		num1 = new JTextField();
+		bagConstraints.fill = GridBagConstraints.HORIZONTAL;
+		bagConstraints.gridx = 1;
+		bagConstraints.gridy = 0;
+		add(num1, constraints);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		Calculator calculator = new Calculator();
+		calculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		calculator.setVisible(true);
+		calculator.setSize(300, 300);
+		calculator.setTitle("The title");
+	}
+}
