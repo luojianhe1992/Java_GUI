@@ -1,0 +1,23 @@
+package test_18;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class OverUnder extends JFrame{
+	
+	private int round = 1;
+	private int rand1, rand2, rand3, rand4;
+	JLabel label1, label2, label3, label4, orLabel, winOrLose;
+	JButton higher, lower;
+	
+	
+	
+	public OverUnder() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

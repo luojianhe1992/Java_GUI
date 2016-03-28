@@ -21,7 +21,8 @@ public class MainWindow extends JFrame{
 		setLayout(new FlowLayout());
 		
 		jMenuBar = new JMenuBar();
-		add(jMenuBar);
+		setJMenuBar(jMenuBar);
+
 		
 		jMenu = new JMenu("Help");
 		jMenuBar.add(jMenu);
@@ -29,7 +30,6 @@ public class MainWindow extends JFrame{
 		jMenuItem = new JMenuItem("About");
 		jMenu.add(jMenuItem);
 		
-		setJMenuBar(jMenuBar);
 		
 		Handler handler = new Handler();
 		jMenuItem.addActionListener(handler);
