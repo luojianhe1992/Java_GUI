@@ -1,0 +1,12 @@
+package test_21;
+
+import javax.swing.JFrame;
+
+public class ClickCounterTimer extends JFrame{
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	
+}

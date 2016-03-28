@@ -1,0 +1,44 @@
+package test_21;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JTextField;
+import javax.swing.Timer;
+
+public class ClickCounterTimer extends JFrame{
+
+	private Timer timer;
+	private int timerCounter;
+	private int clickCounter;
+	private JLabel directions, enterTime, clickLabel, timeLeft;
+	private JButton startButton, clickButton;
+	private JTextField textField;
+	private JMenuBar menuBar;
+	private JMenu menu;
+	private JMenuItem reset, exit;
+	
+	public ClickCounterTimer() {
+		
+		Container container = this.getContentPane();
+		container.setLayout(new GridLayout(3, 1));
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		ClickCounterTimer clickCounterTimer = new ClickCounterTimer();
+		clickCounterTimer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		clickCounterTimer.setSize(300, 300);
+		clickCounterTimer.setVisible(true);
+		clickCounterTimer.setTitle("The title");
+	}
+	
+}

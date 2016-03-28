@@ -1,0 +1,93 @@
+package test_21;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Action;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.Timer;
+
+public class ClickCounterTimer extends JFrame{
+
+	private Timer timer;
+	private int timerCounter;
+	private int clickCounter;
+	private JLabel directions, enterTime, clickLabel, timeLeft;
+	private JButton startButton, clickButton;
+	private JTextField textField;
+	private JMenuBar menuBar;
+	private JMenu menu;
+	private JMenuItem reset, exit;
+	
+	public ClickCounterTimer() {
+		
+		Container container = this.getContentPane();
+		container.setLayout(new GridLayout(3, 1, 2, 2));
+		
+		menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		menu = new JMenu("File");
+		menuBar.add(menu);
+		
+		reset = new JMenuItem("Reset");
+		menu.add(reset);
+		
+		exit = new JMenuItem("Exit");
+		menu.add(exit);
+		
+		HandlerReset handlerReset = new HandlerReset();
+		reset.addActionListener(handlerReset);
+		
+		HandlerExit handlerExit = new HandlerExit();
+		exit.addActionListener(handlerExit);
+
+		JPanel top = new JPanel();
+		top.setLayout(new GridLayout(1, 1));
+		
+		container.add(top);
+		
+		directions = new JLabel("Enter time, press start, press CLIKCER repeatly",
+								SwingConstants.CENTER);
+		
+	}
+	
+	private class HandlerReset implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			
+		}
+		
+	}
+	
+	private class HandlerExit implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		ClickCounterTimer clickCounterTimer = new ClickCounterTimer();
+		clickCounterTimer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		clickCounterTimer.setSize(300, 300);
+		clickCounterTimer.setVisible(true);
+		clickCounterTimer.setTitle("The title");
+	}
+	
+}

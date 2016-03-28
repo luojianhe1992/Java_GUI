@@ -1,0 +1,27 @@
+package test_21;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.Timer;
+
+public class ClickCounterTimer extends JFrame{
+
+	private Timer timer;
+	private int timerCounter;
+	private int clickCounter;
+	private JLabel directions, enterTime, clickLabel, timeLeft;
+	
+	
+	public ClickCounterTimer() {
+		
+	}
+	
+	public static void main(String[] args) {
+		ClickCounterTimer clickCounterTimer = new ClickCounterTimer();
+		clickCounterTimer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		clickCounterTimer.setSize(300, 300);
+		clickCounterTimer.setVisible(true);
+		clickCounterTimer.setTitle("The title");
+	}
+	
+}

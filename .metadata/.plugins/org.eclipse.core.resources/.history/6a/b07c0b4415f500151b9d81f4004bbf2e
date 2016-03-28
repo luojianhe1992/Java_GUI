@@ -1,0 +1,16 @@
+package test_21;
+
+import javax.swing.JFrame;
+
+public class ClickCounterTimer extends JFrame{
+
+	public ClickCounterTimer() {
+		
+	}
+	
+	public static void main(String[] args) {
+		ClickCounterTimer clickCounterTimer = new ClickCounterTimer();
+		clickCounterTimer.setDefaultCloseOperation();
+	}
+	
+}
